@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Seções */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sobre p, .contato p, .localizacao p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Catálogo de Produtos */
+.produtos .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.produtos .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produtos .card:hover {
+    transform: scale(1.05);
+}
+
+.produtos .card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.produtos .card h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.produtos .card p {
+    font-size: 1.2em;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+.produtos .card p:nth-of-type(2) {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Contato */
+.contato ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.contato ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.contato ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contato ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Localização */
+.localizacao p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1em;
+}
+body
